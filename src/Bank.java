@@ -9,7 +9,7 @@ public class Bank {
     static String nameOfTheBank = "The Union Bank";
     static int numOfAccount = 5601;
 
-    
+
 
 
 
