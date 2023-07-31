@@ -4,16 +4,15 @@ public class Account {
     private AccountType accountType;
 
     //Constructor of the Account class
-    public Account (int bankID , AccountType accountType){
-        this.bankID = bankID;
+    public Account (AccountType accountType){
         this.accountType = accountType;
     }
 
     //Getters
     //Creating a getter for bankID
 
-    public int getBankID(int bankID){
-        this.bankID = bankID;
+    public int getBankID(){
+        this.bankID = bankID + 1;
         return bankID;
     }
 
@@ -28,5 +27,9 @@ public class Account {
     public int genarateNewBankID(){
         this.bankID =  bankID +1;
         return bankID;
+    }
+
+    public AccountType SAVINGS_ACCOUNT(){
+        return AccountType.SAVINGS_ACCOUNT;
     }
 }
