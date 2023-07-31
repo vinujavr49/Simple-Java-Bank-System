@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class NewAccount {
+
+    public double statingAmount;
     public static void creatingaNewUserAccount() {
 
 
