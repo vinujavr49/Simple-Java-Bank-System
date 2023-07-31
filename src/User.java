@@ -5,7 +5,11 @@ public class User {
     private int ageOfOwner;
 
     //Constructor of the User class
-    public User(String firstOfOwner , )
+    public User(String firstOfOwner , String secondNameOfOwner , int ageOfOwner){
+        this.firstOfOwner = firstOfOwner;
+        this.secondNameOfOwner = secondNameOfOwner;
+        this.ageOfOwner = ageOfOwner;
+    }
 
     //Getters
     // Creating a getter for firstOfOwner
