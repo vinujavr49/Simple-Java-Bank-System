@@ -1,12 +1,14 @@
+import java.util.Scanner;
+
 public class User {
     //Attributes of the User class
-    private String firstOfOwner;
+    private String firstNameOfOwner;
     private String secondNameOfOwner;
     private int ageOfOwner;
 
     //Constructor of the User class
-    public User(String firstOfOwner , String secondNameOfOwner , int ageOfOwner){
-        this.firstOfOwner = firstOfOwner;
+    public User(String firstNameOfOwner , String secondNameOfOwner , int ageOfOwner){
+        this.firstNameOfOwner = firstNameOfOwner;
         this.secondNameOfOwner = secondNameOfOwner;
         this.ageOfOwner = ageOfOwner;
     }
@@ -14,7 +16,7 @@ public class User {
     //Getters
     // Creating a getter for firstOfOwner
     public String getFirstOfOwner(String firstOfOwner){
-        this.firstOfOwner = firstOfOwner;
+        this.firstNameOfOwner = firstOfOwner;
         return firstOfOwner;
     }
 
@@ -22,6 +24,12 @@ public class User {
     public String getSecondNameOfOwner(String secondNameOfOwner){
         this.secondNameOfOwner = secondNameOfOwner;
         return secondNameOfOwner;
+    }
+
+    public void newUser(){
+        Scanner myScannerForNewAccount = new Scanner(System.in);
+        String newUserFirstName = myScannerForNewAccount.next();
+        System.out.println("Please enter your first name: ");
     }
 
 
