@@ -24,6 +24,9 @@ public class Main {
             myScannerForMenu.close();
         } else if (selectedOption == 2) {
             Deposit.depositMoney();
+
+        } else if (selectedOption == 3) {
+            Withdraw.withdrawMoney();
         }
 
         //System.out.println(selectedAccountType);

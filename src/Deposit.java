@@ -6,8 +6,10 @@ public class Deposit {
         System.out.print("Please enter the deposit amount: ");
         double depAmount = depAmountScanner.nextDouble();
 
-        double currentBal = NewAccount.getStatingAmount() + depAmount;
-        System.out.println(currentBal);
+        User.currentBal = NewAccount.getStatingAmount() + depAmount;
+        System.out.println(User.currentBal);
+
+        depAmountScanner.close();
 
     }
 

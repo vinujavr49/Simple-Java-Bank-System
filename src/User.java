@@ -6,6 +6,8 @@ public class User {
     private String secondNameOfOwner;
     private int ageOfOwner;
 
+    public static double currentBal;
+
     //Constructor of the User class
     public User(String firstNameOfOwner , String secondNameOfOwner , int ageOfOwner){
         this.firstNameOfOwner = firstNameOfOwner;
@@ -26,11 +28,7 @@ public class User {
         return secondNameOfOwner;
     }
 
-    public void newUser(){
-        Scanner myScannerForNewAccount = new Scanner(System.in);
-        String newUserFirstName = myScannerForNewAccount.next();
-        System.out.println("Please enter your first name: ");
-    }
+
 
 
 }

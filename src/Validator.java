@@ -10,5 +10,9 @@ public class Validator {
         }
     }
 
+    public static void withdrawAmtValidator(double withDrawAmt){
+        if ()
+    }
+
 
 }
