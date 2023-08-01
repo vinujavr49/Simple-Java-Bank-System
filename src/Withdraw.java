@@ -2,21 +2,20 @@ import java.util.Scanner;
 
 public class Withdraw {
 
+    public static double withDrawAmt;
+
     public static void withdrawMoney(){
         System.out.print("Please enter your withdraw amount: ");
         Scanner myWthdrawScanner = new Scanner(System.in);
         double withDrawAmt = myWthdrawScanner.nextDouble();
+        Validator.withdrawAmtValidator(withDrawAmt);
 
-        if ((NewAccount.getStatingAmount() || User.currentBal) > withDrawAmt ){
-            System.out.println("Money Withdrawing Process....");
-            Main.blankSpace();
-            System.out.println(------------------------);
-            Main.blankSpace();
-            System.out.println("Money Withdrawing successful");
-            System.out.println(------------------------);
-            System.out.println("Account Statement");
 
-        }
+
+
+
+
+
 
 
     }

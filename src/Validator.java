@@ -11,7 +11,19 @@ public class Validator {
     }
 
     public static void withdrawAmtValidator(double withDrawAmt){
-        if ()
+        if (Withdraw.withDrawAmt > User.currentBal ){
+            System.out.println("This amount of money cannot be withdrawn");
+        }
+        else {
+           User.currentBal = User.currentBal - Withdraw.withDrawAmt;
+            System.out.println("Money Withdrawing Process....");
+            System.out.println("------------------------");
+            System.out.println("Money Withdrawing successful");
+            System.out.println("------------------------");
+            System.out.println("Account Statement");
+
+        }
+
     }
 
 

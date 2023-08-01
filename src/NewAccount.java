@@ -93,7 +93,7 @@ public class NewAccount {
             //Getting input from user about statingAmount
             Scanner scannerOfStartingAmount = new Scanner(System.in);
             System.out.print("Please enter your starting amount: ");
-            double statingAmount  = scannerOfStartingAmount.nextInt();
+            User.currentBal = scannerOfStartingAmount.nextInt();
 
             System.out.println("----------------------------------------");
             System.out.println("Your account has been created");
@@ -102,7 +102,7 @@ public class NewAccount {
             System.out.println("Account ID           : " + account_1.getBankID());
             System.out.println("Name of the owner    : " + firstNameOfOwner + " " + secondNameOfOwner);
             System.out.println("Age of the owner     : " + ageOfOwner);
-            System.out.println("Current balance      : " + statingAmount);
+            System.out.println("Current balance      : " + User.currentBal);
 
             myScannerForNewAccount.close();   //Closing the myScannerForNewAccount object
 

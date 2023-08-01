@@ -28,6 +28,12 @@ public class User {
         return secondNameOfOwner;
     }
 
+    /*public static void currentBalUpadator(){
+        double currentBal = NewAccount.statingAmount;
+
+     */
+
+
 
 
 
