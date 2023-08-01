@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class NewAccount {
 
-    public double statingAmount;
+    public static double statingAmount;
     public static void creatingaNewUserAccount() {
 
 
@@ -107,5 +107,9 @@ public class NewAccount {
 
 
 
+    }
+
+    public static double  getStatingAmount() {
+        return statingAmount;
     }
 }
