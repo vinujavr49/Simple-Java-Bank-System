@@ -21,6 +21,7 @@ public class NewAccount {
             //Getting age form the user
             System.out.print("Please enter your age: ");
             int ageOfOwner = myScannerForNewAccount.nextInt();
+            Validator.agevalidator(ageOfOwner);
 
 
             //Passing the parameter to the User class constructor and create new user_1 object based on input values
@@ -112,4 +113,6 @@ public class NewAccount {
     public static double  getStatingAmount() {
         return statingAmount;
     }
+
+
 }
